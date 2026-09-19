@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "novex-client",
+  "version": "${version}",
+  "name": "NOVEX CLIENT",
+  "description": "A professional, stable, modular Minecraft Java Edition client-side Fabric mod for 1.21.11.",
+  "authors": [
+    "NOVEX Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yesSmartyPieBOT/NovexClientV3"
+  },
+  "license": "MIT",
+  "icon": "assets/novex-client/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.novex.client.NovexClient"
+    ],
+    "modmenu": [
+      "net.novex.client.integration.NovexModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "novex-client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

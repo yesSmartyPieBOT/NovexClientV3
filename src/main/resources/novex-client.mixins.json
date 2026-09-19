@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.novex.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "InGameHudMixin",
+    "CameraMixin",
+    "WorldRendererMixin",
+    "ParticleManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
